@@ -11,7 +11,7 @@
     <packaging>jar</packaging>
     <groupId>org.webjars</groupId>
     <artifactId>d3js</artifactId>
-    <version>2.10.4-SNAPSHOT</version>
+    <version>3.0.8-SNAPSHOT</version>
     <name>D3.js</name>
     <description>WebJar for D3.js</description>
     <url>http://webjars.org</url>
@@ -41,7 +41,7 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <upstreamVersion>2.10.3</upstreamVersion>
+        <upstreamVersion>3.0.8</upstreamVersion>
         <downloadUrl>https://github.com/mbostock/d3/raw/v${upstreamVersion}</downloadUrl>
         <destinationDir>${project.build.outputDirectory}/META-INF/resources/webjars/${project.artifactId}/${upstreamVersion}</destinationDir>
     </properties>
@@ -59,7 +59,7 @@
                         <goals><goal>download-single</goal></goals>
                         <configuration>
                             <url>${downloadUrl}</url>
-                            <fromFile>d3.v2.js</fromFile>
+                            <fromFile>d3.js</fromFile>
                             <toDir>${destinationDir}</toDir>
                         </configuration>
                     </execution>
@@ -69,7 +69,7 @@
                         <goals><goal>download-single</goal></goals>
                         <configuration>
                             <url>${downloadUrl}</url>
-                            <fromFile>d3.v2.min.js</fromFile>
+                            <fromFile>d3.min.js</fromFile>
                             <toDir>${destinationDir}</toDir>
                         </configuration>
                     </execution>
