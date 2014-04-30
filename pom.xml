@@ -11,7 +11,7 @@
     <packaging>jar</packaging>
     <groupId>org.webjars</groupId>
     <artifactId>d3js</artifactId>
-    <version>3.4.4-2-SNAPSHOT</version>
+    <version>3.4.6-SNAPSHOT</version>
     <name>D3.js</name>
     <description>WebJar for D3.js</description>
     <url>http://webjars.org</url>
@@ -46,9 +46,15 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <upstreamVersion>3.4.4</upstreamVersion>
+        <upstreamVersion>3.4.6</upstreamVersion>
         <downloadUrl>https://github.com/mbostock/d3/raw/v${upstreamVersion}</downloadUrl>
         <destinationDir>${project.build.outputDirectory}/META-INF/resources/webjars/${project.artifactId}/${upstreamVersion}</destinationDir>
+        <requirejs>
+            {
+                paths: { "d3js": "d3" },
+                shim: { "d3js": { "exports": "d3" } }
+            }
+        </requirejs>
     </properties>
 
     <build>
