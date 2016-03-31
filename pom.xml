@@ -11,14 +11,14 @@
     <packaging>jar</packaging>
     <groupId>org.webjars</groupId>
     <artifactId>d3js</artifactId>
-    <version>3.5.13-SNAPSHOT</version>
+    <version>3.5.16-SNAPSHOT</version>
     <name>D3.js</name>
     <description>WebJar for D3.js</description>
     <url>http://webjars.org</url>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <upstreamVersion>3.5.12</upstreamVersion>
+        <upstreamVersion>3.5.16</upstreamVersion>
         <downloadUrl>https://github.com/mbostock/d3/raw/v${upstreamVersion}</downloadUrl>
         <destinationDir>${project.build.outputDirectory}/META-INF/resources/webjars/${project.artifactId}/${upstreamVersion}</destinationDir>
         <requirejs>
