@@ -11,7 +11,7 @@
     <packaging>jar</packaging>
     <groupId>org.webjars</groupId>
     <artifactId>d3js</artifactId>
-    <version>4.2.1-SNAPSHOT</version>
+    <version>4.2.1</version>
     <name>D3.js</name>
     <description>WebJar for D3.js</description>
     <url>http://webjars.org</url>
@@ -46,7 +46,7 @@
         <url>http://github.com/webjars/d3js</url>
         <connection>scm:git:https://github.com/webjars/d3js.git</connection>
         <developerConnection>scm:git:https://github.com/webjars/d3js.git</developerConnection>
-        <tag>HEAD</tag>
+        <tag>d3js-4.2.1</tag>
     </scm>
 
     <developers>
@@ -88,10 +88,10 @@
                         <goals><goal>run</goal></goals>
                         <configuration>
                             <target>
-                                <echo message="download archive"/>
-                                <get src="${downloadUrl}" dest="${project.build.directory}/${project.artifactId}.zip"/>
-                                <echo message="unzip archive"/>
-                                <unzip src="${project.build.directory}/${project.artifactId}.zip" dest="${destinationDir}"/>
+                                <echo message="download archive" />
+                                <get src="${downloadUrl}" dest="${project.build.directory}/${project.artifactId}.zip" />
+                                <echo message="unzip archive" />
+                                <unzip src="${project.build.directory}/${project.artifactId}.zip" dest="${destinationDir}" />
                             </target>
                         </configuration>
                     </execution>
