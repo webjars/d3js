@@ -11,7 +11,7 @@
     <packaging>jar</packaging>
     <groupId>org.webjars</groupId>
     <artifactId>d3js</artifactId>
-    <version>6.2.1-SNAPSHOT</version>
+    <version>6.6.0-SNAPSHOT</version>
     <name>D3.js</name>
     <description>WebJar for D3.js</description>
     <url>http://webjars.org</url>
